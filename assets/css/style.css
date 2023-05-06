@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* Insert your styling here. */
+body{
+    font-family: "Roboto", "sans-serif";
+    line-height: 1.7;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    color:black;
+}
+a{
+    color:black;
+    text-decoration: none;
+    font-weight: 500;
+}
+section {
+    padding: 80px 0px;
+
+}
+@media(max-width:600px){
+    section {
+        padding: 60px 0px
+    }
+}
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 4;
+}
+nav * {
+    font-weight: 500;
+    font-size: 14px;
+    line-height:14px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav-container {
+    max-width: 1220px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 66px;
+    padding: 0px 20px;
+    align-items:center ;
+}
+.navbar-center {
+    text-align: center;
+    min-width: 680px;
+}
+.navbar-center a {
+    padding: 0px 18px;
+    color: black;
+}
+.navbar-center button {
+    display: none; 
+}
+.navbar-center a:hover {
+    text-decoration: underline rgb(0, 82, 255) 5px;
+    text-underline-offset: 25px;
+}
+.nav-getstarted {
+    color: white;
+    border-radius: 4px;
+    font-weight:500;
+    padding: 10px 12px;
+    line-height: 14px;
+    border: 1px solid rgb(0,82,255);
+    background-color: rgb(0,82,255);
+    margin-right: 16px;
+    font-size: 14px;
+}
+.nav-sign-in{
+    margin: 0px 16px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+.navbar-left{
+    margin-right: 35px;
+}
+nav hr {
+    height: 1px;
+    margin: 0px;
+}
+@media(max-width:1050px){
+    #menu-bar{
+        display: inline-block;
+        margin-top: 12px;
+        width: 20px;
+        border-color: white;
+        margin-left: 5px;
+        height: 20px;
+    }
+    .bar{
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        height: 2px;
+        width: 18px;
+        background-color: rgb(5,15,25);
+        border-radius: 4px;
+        transition: 0.3s ease;
+    }
+    #bar1{
+        transform: translateY(-6px);
+    }
+    #bar3{
+        transform: translateY(6px);
+    }
+    .change #bar1{
+        transform: translateY(2px) rotateZ(-45deg);
+    }
+    .change #bar2{
+        opacity: 0;
+    }
+    .change #bar3{
+        transform: translateY(-2px) rotateZ(45deg);
+    }
+    .nav-sign-in{
+        display: none;
+    }
+    .navbar-center{
+        min-width: initial;
+    }
+    .navbar-center a,
+    .navbar-center button,
+    .navbar-center{
+        display: block;
+    }
+    .nav-container{
+        height: 60px;
+    }
+    .navbar-left{
+        margin-right: 16px;
+    }
+    .navbar-center{
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        overflow: hidden;
+        background-color: white;
+        width: 100%;
+        transition: height 0.2s ease-out;
+    }
+    .navbar-center a{
+        text-align: left;
+        padding: 20px 5px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .navbar-center a:hover{
+        text-decoration: none;
+    }
+    .navbar-center button{
+        font-size: 16px;
+        margin: 8px, 18px;
+        padding: 20px;
+        min-width: 300px;
+        border-radius: 5px;
+        flex-wrap: nowrap;
+    }
+    .dropdown-get-started{
+        color: white;
+        border: none;
+        background-color: rgb(0,82,255);
+    }
+    .dropdown-sign-in{
+        background-color: white;
+        color: rgb(0,82,255);
+        border: solid;
+        border-width: 2px;
+        border-color: rgb(0,82,255);
+    }
+    .bropdown{
+        height: calc(100vh-60px);
+        overflow-y: auto;
+    }
+    .dropup{
+        height: 0px;
+        padding: 0px;
+    }
+}
+@media(max-width:600px){
+    .navbar-center button{
+        min-width: initial;
+        width: 85%;
+    }
+}
+/* hero styling starts here */
+.hero{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    top: 60px;
+    width: 100vw;
+    justify-content: center;
+}
+.right{
+    width: 30vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.rightimg{
+    /* position: absolute; */
+    height: 500px;
+    z-index: 3;
+}
+.circle{
+    background-color: gray;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+}
+.left{
+    width: 520px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 15px; 
+}
+.left1{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.left1p{
+    margin: 0px 7px 0px 7px;
+    color: rgb(71,71,231);
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+}
+.left2{
+    width:90%;
+    margin-bottom: 15px;
+    line-height: normal;
+    color:black;
+    font-weight: 600;
+}
+.left2p{
+    font-size:65px;
+}
+.left3{
+    width: 90%;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+.left4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.email{
+    height: 64px;
+    width: 270px;
+    margin-right: 10px;
+    padding-left: 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.button{
+    height: 66px;
+    background-color: rgb(0,80,252);
+    width: 180px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.test{
+    margin: 0 16px;
+}
+
+/* footer part */
+footer ul{
+    list-style: none;
+}
+footer a{
+    color: rgba(128, 128, 128, 1);
+}
+.footer_img{
+    width: auto;
+    height: 25px;
+    margin-bottom: 30px;
+}
+.footer_top{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+}
+#langs{
+    margin-bottom: 80px;
+    padding: 7px 80px 7px 80px;
+    border-radius: 5px;
+    border: 1px solid rgb(233,223, 222);
+}
+/* pure js part */
+.c{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 220px;
+}
+.rupees, .supportcount, .userscount{
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+}
+.quarterly, .countriessupport, .verifiedusers{
+    font-size: 16px;
+}
